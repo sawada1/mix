@@ -12,7 +12,7 @@
       
         </div>
         <div class="container search">
-           <input type="text" v-model="search" placeholder="what are you looking for">
+           <input @keypress.enter="getthemovie" type="text" v-model="search" placeholder="what are you looking for">
            <button @click="getthemovie" class="btn btn-success">search</button>
          </div>
          <div class=" allmovies">
